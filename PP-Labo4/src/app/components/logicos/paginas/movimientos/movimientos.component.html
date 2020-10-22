@@ -1,0 +1,13 @@
+<app-spinner *ngIf="spinner"></app-spinner>
+<app-title titulo="Movimientos Pokemon"></app-title>
+<app-label label="Nombre: {{pokemon.name}}"></app-label>
+<br><br>
+<app-label label="Imágenes:"></app-label><br>
+<div *ngFor="let foto of fotos">
+    <img src="{{foto}}">
+</div>
+<app-label label="Movimientos:"></app-label><br>
+<div *ngFor="let hab of movimientos">
+    <br>
+    <app-label label="{{hab}}"></app-label>
+</div>

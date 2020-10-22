@@ -1,0 +1,25 @@
+<app-spinner *ngIf="spinner"></app-spinner>
+<app-title titulo="Detalle Pokemon"></app-title>
+<app-label label="Nombre: {{pokemon.name}}"></app-label>
+<br>
+<app-label label="Order: {{order}}"></app-label><br>
+<br>
+<app-label label="Imágenes:"></app-label><br>
+<div *ngFor="let foto of fotos">
+    <img src="{{foto}}">
+</div>
+<app-label label="Peso:"></app-label><br>
+
+<app-label label="{{peso}} kg"></app-label>
+<br>
+<br>
+<app-label label="Altura:"></app-label><br>
+
+<app-label label="{{altura}} m"></app-label>
+<br>
+<br>
+<app-label label="Habilidades:"></app-label><br>
+<div *ngFor="let hab of habilidades">
+    
+    <app-label label="{{hab}}"></app-label>
+</div>

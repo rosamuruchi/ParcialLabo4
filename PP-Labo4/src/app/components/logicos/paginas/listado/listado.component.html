@@ -1,0 +1,8 @@
+<app-spinner *ngIf="spinner"></app-spinner>
+<app-title titulo="Listado de Pokemones"></app-title>
+<div *ngFor="let poke of results">
+    <app-label label="{{poke.name}}    "></app-label>
+    <button mat-raised-button color="Link" (click)=irDetalle(poke.name)>Ver detalle</button>
+    <button mat-raised-button color="Link" (click)=irMovimientos(poke.name)>Movimientos</button>
+</div>
+<mat-paginator [length]="1050" [pageSize]="20" (page)="onPageChange($event)"></mat-paginator>

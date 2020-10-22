@@ -1,0 +1,18 @@
+.spin{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+.divSpinner{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 15vw;
+    width: 15vw;
+    z-index: 9998;
+    background-image: linear-gradient(rgba(142, 247, 207, 0.8), rgba(51, 211, 36, 0.8));
+    border-radius: 20%;
+}

@@ -1,0 +1,6 @@
+<mat-toolbar>
+    
+    <button mat-button routerLink="{{item.ruta}}" routerLinkActive="active" *ngFor="let item of menuItems">
+        {{item.texto}}
+    </button>
+</mat-toolbar>
